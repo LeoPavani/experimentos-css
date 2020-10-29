@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 12,5%);
+    grid-template-rows: 100px 1fr 100px;
+    /* grid-template-areas:  */
+    font-family: 'Roboto',Helvetica,Arial,sans-serif;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: 1fr;
+    height: 65px;
+    grid-template-areas: 
+        'grupo navegacao usuario';
+    border-bottom: solid 1px rgb(192, 192, 192) ;
+}
+
+.grupo{
+    grid-area: grupo;
+    margin-left: 15px;
+}
+
+.grupo > p{
+    margin: 5px 0px;
+}
+
+.grupo-nome{
+    color: rgb(65, 65, 65);
+    font-weight: bolder;
+}
+
+.descricao{
+    color: rgb(99, 99, 99);
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+.header-grupo{
+    display: flex;
+    align-items: center;
+}
+
+.navegacao-header{
+    grid-area: navegacao;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario-menu-header{
+    grid-area: usuario;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navegacao-header > span{
+    margin: 25px;
+    color: rgb(100, 100, 100);
+}

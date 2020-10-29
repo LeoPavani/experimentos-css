@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 12,5%);
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+        'header nav nav nav'
+        'conteudo conteudo conteudo conteudo'
+        'rodape rodape rodape rodape';
+}
+
+div{
+    box-sizing: border-box;
+    border: solid 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.header{
+    border-color: blue;
+    grid-area: header;
+}
+
+.nav{
+    border-color: green;
+    grid-area: nav;
+}
+
+.conteudo{
+    border-color: red;
+    grid-area: conteudo;
+}
+.rodape{
+    border-color: black;
+    grid-area: rodape;
+}
+
+a{
+    text-decoration: none;   
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+
+}
